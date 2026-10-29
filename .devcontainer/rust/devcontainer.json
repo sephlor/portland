@@ -1,0 +1,50 @@
+{
+    "build": {
+        "context": "${localWorkspaceFolder}/.devcontainer",
+        "dockerfile": "${localWorkspaceFolder}/.devcontainer/Dockerfile",
+        "args": {
+           "BASE": "ubuntu:24.04"
+        }
+    },
+    "runArgs": [
+        "--name", "rust"
+    ],
+    "remoteUser": "coder",
+    "containerUser": "root",
+    "updateRemoteUserUID": true,
+    "containerEnv": {
+        "LANG": "${localEnv:LANG:en_US.UTF-8}",
+        "TERM": "${localEnv:TERM:linux}"
+    },
+    "workspaceFolder": "/home/coder/portland",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/coder/portland,type=bind",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "userUid": "1001",
+            "userGid": "1001",
+            "username": "coder",
+            "installZsh": "false",
+            "upgradePackages": "true"
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "ppa": "true",
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/git-lfs:1.2.1": {
+            "autoPull": false
+        },
+        "ghcr.io/devcontainers/features/github-cli:1.1.0": {},
+        "ghcr.io/rapidsai/devcontainers/features/llvm:latest": {
+            "version": "23"
+        },
+        "ghcr.io/rapidsai/devcontainers/features/rust:latest": {}
+    },
+    "overrideFeatureInstallOrder": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/git",
+        "ghcr.io/devcontainers/features/git-lfs",
+        "ghcr.io/devcontainers/features/github-cli",
+        "ghcr.io/rapidsai/devcontainers/features/llvm",
+        "ghcr.io/rapidsai/devcontainers/features/rust"
+    ]
+}
