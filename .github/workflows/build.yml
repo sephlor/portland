@@ -8,13 +8,10 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Show Rust version
-        run: rustc --version
+        run: cargo --version
 
       - name: Build
-        run: |
-          rustc --crate-type=lib libs.rs
-          rustc --crate-type=lib --out-dir=other_libs other_libs/other_libs.rs
-          rustc -o main_split_with_libs main.rs --extern other_libs=other_libs/libother_libs.rlib
+        run: cargo build --locked
 
       - name: Run
-        run: ./main_split_with_libs
+        run: cargo run -p split --locked
