@@ -37,7 +37,10 @@
         "ghcr.io/rapidsai/devcontainers/features/llvm:latest": {
             "version": "23"
         },
-        "ghcr.io/rapidsai/devcontainers/features/rust:latest": {}
+        "ghcr.io/rapidsai/devcontainers/features/rust:latest": {},
+        "ghcr.io/rapidsai/devcontainers/features/cmake:26": {},
+        "ghcr.io/rapidsai/devcontainers/features/ninja:26": {},
+        "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/devcontainers/features/common-utils",

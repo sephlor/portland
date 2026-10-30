@@ -1,5 +1,10 @@
 {
   "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {
+      "version": "1.0.5",
+      "resolved": "ghcr.io/anthropics/devcontainer-features/claude-code@sha256:cfc2e7d3e9fd3b9b01f8d5cb158508a884c8c0ede2e23ed10f32dea5d4ffe69a",
+      "integrity": "sha256:cfc2e7d3e9fd3b9b01f8d5cb158508a884c8c0ede2e23ed10f32dea5d4ffe69a"
+    },
     "ghcr.io/devcontainers/features/common-utils:2": {
       "version": "2.7.1",
       "resolved": "ghcr.io/devcontainers/features/common-utils@sha256:e76a6a8a35d1ad824daad1540725e0ec9f8ed2dc00d2850e990a9830013c7d08",
@@ -20,10 +25,20 @@
       "resolved": "ghcr.io/devcontainers/features/github-cli@sha256:d22f50b70ed75339b4eed1ba9ecde3a1791f90e88d37936517e3bace0bbad671",
       "integrity": "sha256:d22f50b70ed75339b4eed1ba9ecde3a1791f90e88d37936517e3bace0bbad671"
     },
+    "ghcr.io/rapidsai/devcontainers/features/cmake:26": {
+      "version": "26.12.0",
+      "resolved": "ghcr.io/rapidsai/devcontainers/features/cmake@sha256:c365feb0ba7687e561994ee8e65970ca4a430beef1d3e3baea62b1ab2d6624f9",
+      "integrity": "sha256:c365feb0ba7687e561994ee8e65970ca4a430beef1d3e3baea62b1ab2d6624f9"
+    },
     "ghcr.io/rapidsai/devcontainers/features/llvm:latest": {
       "version": "26.12.0",
       "resolved": "ghcr.io/rapidsai/devcontainers/features/llvm@sha256:02558f0ce91a8dac3ba25f298bfd9d21c500d157d3fc478f7c67df3840e7bc97",
       "integrity": "sha256:02558f0ce91a8dac3ba25f298bfd9d21c500d157d3fc478f7c67df3840e7bc97"
+    },
+    "ghcr.io/rapidsai/devcontainers/features/ninja:26": {
+      "version": "26.12.0",
+      "resolved": "ghcr.io/rapidsai/devcontainers/features/ninja@sha256:b664df9f383daaa38ad416f92d4af52f93a51f82c8e726c5721b018f88fdba79",
+      "integrity": "sha256:b664df9f383daaa38ad416f92d4af52f93a51f82c8e726c5721b018f88fdba79"
     },
     "ghcr.io/rapidsai/devcontainers/features/rust:latest": {
       "version": "26.12.0",

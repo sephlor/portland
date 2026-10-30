@@ -37,7 +37,8 @@
         "ghcr.io/rapidsai/devcontainers/features/llvm:latest": {
             "version": "23"
         },
-        "ghcr.io/rapidsai/devcontainers/features/gcc:latest": {}
+        "ghcr.io/rapidsai/devcontainers/features/gcc:latest": {},
+        "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
     },
     "overrideFeatureInstallOrder": [
         "ghcr.io/devcontainers/features/common-utils",
