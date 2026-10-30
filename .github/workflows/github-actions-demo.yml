@@ -1,13 +1,20 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: build
 on: [push]
 jobs:
-  check-bats-version:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v7
-        with:
-          node-version: '24'
-      - run: npm install -g bats
-      - run: bats -v
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Show Rust version
+        run: rustc --version
+
+      - name: Build
+        run: |
+          rustc --crate-type=lib libs.rs
+          rustc --crate-type=lib --out-dir=other_libs other_libs/other_libs.rs
+          rustc -o main_split_with_libs split.rs --extern other_libs=other_libs/libother_libs.rlib
+
+      - name: Run
+        run: ./main_split_with_libs
