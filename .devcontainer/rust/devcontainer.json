@@ -1,4 +1,5 @@
 {
+    "name": "rust",
     "build": {
         "context": "${localWorkspaceFolder}/.devcontainer",
         "dockerfile": "${localWorkspaceFolder}/.devcontainer/Dockerfile",
@@ -48,6 +49,9 @@
         "ghcr.io/devcontainers/features/git-lfs",
         "ghcr.io/devcontainers/features/github-cli",
         "ghcr.io/rapidsai/devcontainers/features/llvm",
-        "ghcr.io/rapidsai/devcontainers/features/rust"
+        "ghcr.io/rapidsai/devcontainers/features/rust",
+        "ghcr.io/rapidsai/devcontainers/features/cmake",
+        "ghcr.io/rapidsai/devcontainers/features/ninja",
+        "ghcr.io/anthropics/devcontainer-features/claude-code"
     ]
 }
